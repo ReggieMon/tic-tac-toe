@@ -194,7 +194,7 @@ class MovePicker
   end
 
   def imperative_diags(diags, board)
-    diags.each do
+    diags.each do |diag|
       if diag[0] == '\\'
         @size.times do |num|
           next unless board.cell_available?(num, num)
